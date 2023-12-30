@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-qkB2+41R5aa1bFVFH4leZkGrxiSQqC2M9LFPpTozmt9mMz8v3pZ5vBE5F2Fm2iwj" crossorigin="anonymous">
+
+  <title> Apple Shop</title>
+</head>
+<style>
+  .carousel-item img {
+    width: 100%;
+    height: 400px;
+  }
+  .container img {
+    width: 100%;
+    height: 100px;  
+  }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-light" href="#">Apple Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#"> Ofertas <span class="sr-only"> Ofertas</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" class="text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ordenar por:
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"> Menores Preços </a>
+            <a class="dropdown-item" href="#"> Mais Vendidos</a>
+            <a class="dropdown-item" href="#"> Melhores Avaliações </a>
+            <div class="dropdown-divider"> </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="Listagem de Produtos.html"> Ver Produtos </a>
+            
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping fa-beat" style="color: #ffffff;"></i> 
+          </a>
+        </li>
+            
+      </ul>    
+          <form class="form-inline my-0 my-lg-0">
+            <input class="form-control mr-sm-0" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0 bg-dark text-light" type="submit">Pesquisar</button>
+          </form>
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="Pagina incial/iphonesa.JPG" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="Pagina incial/airpodsa.JPG" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="Pagina incial/ipads.JPG" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+  <h1> OFERTAS </h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="Pagina incial/iphone8plus" alt="Imagem 1" class="img-fluid">
+        <h2 class="bg-dark text-white p-2">50% OFF</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="Pagina incial/iphone12promaxa" alt="Imagem 2" class="img-fluid">
+        <h2 class="bg-dark text-white p-2">40% OFF</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="Pagina incial/iphone13a" alt="Imagem 3" class="img-fluid">
+        <h2 class="bg-dark text-white p-2">45% OFF</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="Pagina incial/ipadmini4" alt="Imagem 4" class="img-fluid">
+        <h2 class="bg-dark text-white p-2">50% OFF</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="Pagina incial/airpods" alt="Imagem 5" class="img-fluid">
+        <div class="position-absolute top-0 start-0 translate-middle">
+            <h2 class="bg-dark text-white p-2">20% OFF</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2> MAIS VISUALIZADOS </h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="Pagina incial/iphone11pro" alt="Imagem 1" class="img-fluid">
+      </div>
+      <div class="col-md-2">
+        <img src="Pagina incial/iphone 11" alt="Imagem 2" class="img-fluid">
+      </div>
+      <div class="col-md-2">
+        <img src="Pagina incial/ipadmini4" alt="Imagem 3" class="img-fluid">
+      </div>
+      <div class="col-md-2">
+        <img src="Pagina incial/iphone8plus" alt="Imagem 4" class="img-fluid">
+      </div>
+      <div class="col-md-2">
+        <img src="Pagina incial/air podss" alt="Imagem 5" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="mb-3">Assine a Newsletter</h3>
+          <p> Seja o primeiro a saber sobre nossas ofertas especiais, lançamentos de novos produtos e eventos</p> 
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Digite seu e-mail" aria-label="Digite seu e-mail" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-light" type="button" id="button-addon2">Assinar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+            <div class="col-md-2">
+              <h4 class="mb-3">Shop</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Iphones</a></li>
+                <li><a href="#" class="text-light">Ipads</a></li>
+                <li><a href="#" class="text-light">AirPods</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h5 class="mb-3">Help</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Central de ajuda</a></li>
+                <li><a href="#" class="text-light">Status do pedido</a></li>
+                <li><a href="#" class="text-light">Devoluções e garantia</a></li>
+                <li><a href="#" class="text-light">Fale conosco</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6 class="mb-3">About</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Sobre Nós</a></li>
+                <li><a href="#" class="text-light">Responsabilidades</a></li> 
+                <li><a href="#" class="text-light">Tecnologia e inovação</a></li>
+                <li><a href="#" class="text-light">Explore nossas histórias</a></li>
+              </ul>
+            </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha384-3eT2Ay5ZBWv5RRZdwE/SLZGtr3z2FwoNf9Bktj2rsw4x21D4Ty7b3eLxlFfJWJZ" crossorigin="anonymous"></script>
+</body>
+</html>

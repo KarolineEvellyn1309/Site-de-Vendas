@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title> Carrinho de compras </title>
+</head>
+<style>
+  .container {
+    max-width: 1200px;
+  }
+  .left-column {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-right: 20px;
+  }
+  .container img {
+    width: 40%;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  .img-description {
+    margin-top: 10px;
+  }
+  .coupon-code {
+    width: 100%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  .buy-btn {
+    margin-top: 10px;
+  }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-light" href="#">Apple Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#"> Ofertas <span class="sr-only"> Ofertas</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" class="text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ordenar por:
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"> Menores Preços </a>
+            <a class="dropdown-item" href="#"> Mais Vendidos</a>
+            <a class="dropdown-item" href="#"> Melhores Avaliações </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="Apresentação do Produto.html"> Voltar</a>
+        </li>
+      </ul>
+      <form class="form-inline my-0 my-lg-0">
+        <input class="form-control mr-sm-0" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0 bg-dark text-light" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <strong> CARRINHO</strong>
+    <p> Não está pronto para finalizar a compra? Continuar Comprando</p>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="Carrinho/iphone11pro.webp" alt="Foto 1" class="img-fluid">
+        <button type="button" class="btn btn-danger btn-sm" onclick="removerItem()">Remover</button>
+        <p> Cor: Branco</p>
+        <p> Quantidade: 1</p>
+        <p> $4000 </p>
+        <img src="Carrinho/iphone 15" alt="Foto 2" class="img-fluid">
+        <button type="button" class="btn btn-danger btn-sm" onclick="removerItem()">Remover</button>
+        <p> Cor: Chumbo</p>
+        <p> Quantidade: 1</p>
+        <p> $7000 </p>
+      </div>
+      <div class="col-md-6">
+        <strong> Resumo da compra </strong>
+        <label for="coupon">Cupom de desconto:</label>
+        <input type="text" id="coupon" name="coupon" class="coupon-code">
+        <div class="d-flex flex-column">
+        <p>Subtotal:                 $11000</p>
+        <p>Transporte:                 calculado na próxima etapa </p>
+        <p>Total:                 $11000</p>
+      </div>
+      <a href="Pagamento.html">
+        <button type="button" class="btn btn-dark w-50">Comprar</button>
+      </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha384-3eT2Ay5ZBWv5RRZdwE/SLZGtr3z2FwoNf9Bktj2rsw4x21D4Ty7b3eLxlFfJWJZ" crossorigin="anonymous"></script>
+  <script> function removerItem() { alert("Item removido do carrinho"); } </script>
+</body>
+</html>

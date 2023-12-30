@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title> Página de pagamento </title>
+</head>
+<style>
+  .pagamento{
+    max-width: 400px; 
+    margin: left;
+  }
+  .container img {
+    width: 70%;
+    height: 100px;
+    margin-top: 15px;  
+  }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-light" href="#">Apple Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#"> Ofertas <span class="sr-only"> Ofertas</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" class="text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ordenar por:
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"> Menores Preços </a>
+            <a class="dropdown-item" href="#"> Mais Vendidos</a>
+            <a class="dropdown-item" href="#"> Melhores Avaliações </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="Carrinho.html"> Voltar </a>
+        </li>
+      </ul>
+      <form class="form-inline my-0 my-lg-0">
+        <input class="form-control mr-sm-0" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0 bg-dark text-light" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card-box">
+        <h3>Pagamento</h3>
+        <p>Dados do cartão</p>
+    <div class="row">
+      <div class="col-md-6">
+      <div class="form-group">
+        <input type="text" class="form-control" id="cardholder-name" placeholder="Nome do cartão">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="card-number" placeholder="Número do cartão">
+      </div>
+      <div class="form-group">
+      <div class="row">
+        <div class="col-md-6">
+        <input type="text" class="form-control" id="expiry-month" placeholder="Mês">
+        </div>
+        <div class="col-md-6">
+        <input type="text" class="form-control" id="expiry-year" placeholder="Ano">
+        </div>
+      </div>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="save-card-data">
+        <label class="form-check-label" for="save-card-data">Salvar cartão para pagamentos futuros</label>
+        </div>
+      </div>
+      <button type="button" class="btn btn-dark w-50">Confirmar Pagamento</button>
+      </div>
+    </div>
+        </div>
+      </div>
+        <div class="col-md-4">
+          <h3> Seu carrinho: </h3>
+          <img src="Pagamento/iphone11pro.webp" alt="Foto 1">
+          <p class="mt-2">Cor: Branco</p>
+          <p class="mt-2">Quantidade: 1</p>
+          <strong class="mt-2">$4000</strong>
+          <button type="button" class="btn btn-danger btn-sm" onclick="removerItem()">Remover</button>
+          <img src="Pagamento/iphone 15.webp" alt="Foto 2">
+          <p class="mt-2">Cor: Chumbo</p>
+          <p class="mt-2">Quantidade: 1</p>
+          <strong class="mt-2">$7000</strong>
+          <button type="button" class="btn btn-danger btn-sm" onclick="removerItem()">Remover</button>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha384-3eT2Ay5ZBWv5RRZdwE/SLZGtr3z2FwoNf9Bktj2rsw4x21D4Ty7b3eLxlFfJWJZ" crossorigin="anonymous"></script>
+  <script> function removerItem() { alert("Item removido do carrinho"); } </script>
+</body>
+</html>
